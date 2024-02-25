@@ -1,15 +1,17 @@
-import Head from "next/head"
+import Head from "next/head";
+import Navbar from "./Navbar";
 
-const Layout = ({children}:{children: React.ReactNode}) => {
+const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <>
-        <Head>
-            <link rel="shortcut icon" href="#" />
-            <title>Portifolio</title>
-        </Head>
-        <main className="">{children}</main>
+      <Head>
+        <link rel="shortcut icon" href="#" />
+        <title>Thiago Alves</title>
+      </Head>
+      <Navbar />
+      <main className="p-5 mt-10">{children}</main>
     </>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;
