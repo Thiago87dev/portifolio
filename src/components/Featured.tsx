@@ -1,8 +1,7 @@
-import { TbWorld } from "react-icons/tb";
 import Link from "next/link";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import { SiGithub } from "react-icons/si";
+import Btn from "./Btn";
 
 interface IconsProps {
   icon: React.ReactNode;
@@ -51,20 +50,8 @@ const Featured = ({ data }: FeaturedProps) => {
               ))}
             </div>
             <div className="flex flex-col sm:flex-row mt-4 gap-4">
-              <Link
-                target="_blank"
-                href={item.hrefSite}
-                className="flex items-center gap-1 bg-colorPrimary p-2 rounded-lg justify-center sm:justify-start hover:bg-colorThird hover:text-colorWhite"
-              >
-                Website <TbWorld />
-              </Link>
-              <Link
-                target="_blank"
-                href={item.hrefRepo}
-                className="flex items-center gap-1 bg-colorPrimary p-2 rounded-lg justify-center sm:justify-start hover:bg-colorThird hover:text-colorWhite"
-              >
-                Repositorio <SiGithub />
-              </Link>
+              <Btn href={item.hrefSite} title="Website"/>
+              <Btn href={item.hrefRepo} title="Repositorio"/>
             </div>
           </div>
         </div>

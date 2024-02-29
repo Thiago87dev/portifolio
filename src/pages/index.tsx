@@ -1,10 +1,11 @@
-import bestMovie from "@/assets/img/bestMovie.png";
 import { skillList, bestMovieData, carHubData, blogData } from "@/Data";
 import { Alegreya } from "next/font/google";
 import Skills from "@/components/Skills";
 import Featured from "@/components/Featured";
 import { useEffect, useRef } from "react";
 import { useAnimation, useInView, motion } from "framer-motion";
+import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const alegreya = Alegreya({ subsets: ["latin"] });
 
@@ -42,7 +43,7 @@ export default function Home() {
   return (
     <div className={`${alegreya.className}`}>
       <h1 className={`text-base text-colorPrimary font-semibold`}>
-        Olá, meu nome é Thiago Alves
+        Olá, meu nome é <span className="text-xl ">Thiago Alves</span>
       </h1>
       <h2 className="text-colorWhite text-5xl md:text-7xl font-bold">
         Eu crio Websites
@@ -70,7 +71,7 @@ export default function Home() {
           Projetos em destaque
         </h2>
         <p className="text-colorWhite text-2xl">
-          Uma seleção de projetos que eu criei
+          Alguns dos melhores projetos que eu criei.
         </p>
         <div className="mt-16" ref={containerRef}>
           <motion.div
@@ -82,9 +83,7 @@ export default function Home() {
             }}
             transition={{ delay: 0.3, duration: 1 }}
           >
-            <Featured
-              data={carHubData}
-            />
+            <Featured data={carHubData} />
           </motion.div>
         </div>
         <div className="mt-16" ref={containerRef2}>
@@ -97,9 +96,7 @@ export default function Home() {
             }}
             transition={{ delay: 0.3, duration: 1 }}
           >
-            <Featured
-              data={bestMovieData}
-            />
+            <Featured data={bestMovieData} />
           </motion.div>
         </div>
         <div className="mt-16" ref={containerRef3}>
@@ -112,11 +109,13 @@ export default function Home() {
             }}
             transition={{ delay: 0.3, duration: 1 }}
           >
-            <Featured
-              data={blogData}
-            />
+            <Featured data={blogData} />
           </motion.div>
         </div>
+      </div>
+      <div className="text-colorWhite flex justify-end text-4xl my-4  ">
+        <Link href="/projects"><h3 className="hover:text-colorPrimary hover:scale-110 hover:translate-x-2 flex items-center gap-2 cursor-pointer">Veja mais projetos <FaArrowRightLong /></h3></Link>
+        
       </div>
     </div>
   );
