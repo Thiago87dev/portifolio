@@ -18,6 +18,11 @@ const Navbar = () => {
   function toggleMenu() {
     setActive(!active);
   }
+
+  function clomeMenu() {
+    setActive(false);
+  }
+
   return (
     <div className={`${alegreya.className} h-16 mt-4`}>
       <nav className="hidden md:flex justify-end gap-8 p-5 text-colorWhite">
@@ -34,7 +39,10 @@ const Navbar = () => {
       </nav>
       <div className="md:hidden flex justify-end p-4">
         {!active ? (
-          <IoMenu className="text-4xl cursor-pointer text-colorWhite" onClick={toggleMenu} />
+          <IoMenu
+            className="text-4xl cursor-pointer text-colorWhite"
+            onClick={toggleMenu}
+          />
         ) : (
           <div className="flex flex-col">
             <div className="flex justify-end">
@@ -44,10 +52,11 @@ const Navbar = () => {
               />
             </div>
 
-            <div className="bg-colorBlack bg-opacity-80 w-full z-10 px-24 flex flex-col h-96 justify-around items-center rounded-lg">
+            <div className="bg-colorFourth bg-opacity-90 w-full z-10 px-24 flex flex-col h-96 justify-around items-center rounded-lg">
               {navigation.map((item) => (
                 <Link
-                  className="text-sm uppercase text-colorWhite font-semibold flex flex-col "
+                onClick={clomeMenu}
+                  className="text-lg uppercase text-colorWhite font-semibold flex flex-col "
                   key={item.title}
                   href={item.href}
                 >

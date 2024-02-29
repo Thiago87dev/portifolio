@@ -2,7 +2,7 @@ import { skillList, bestMovieData, carHubData, blogData } from "@/Data";
 import { Alegreya } from "next/font/google";
 import Skills from "@/components/Skills";
 import Featured from "@/components/Featured";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAnimation, useInView, motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
@@ -10,6 +10,7 @@ import Link from "next/link";
 const alegreya = Alegreya({ subsets: ["latin"] });
 
 export default function Home() {
+
   const containerRef = useRef(null);
   const isInView = useInView(containerRef, { once: true });
   const mainControl = useAnimation();
@@ -78,7 +79,7 @@ export default function Home() {
             animate={mainControl}
             initial="hidden"
             variants={{
-              hidden: { opacity: 0, x: 400 },
+              hidden: { opacity: 0, x: 20 },
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ delay: 0.3, duration: 1 }}
@@ -91,7 +92,7 @@ export default function Home() {
             animate={mainControl2}
             initial="hidden"
             variants={{
-              hidden: { opacity: 0, x: -400 },
+              hidden: { opacity: 0, x: -20 },
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ delay: 0.3, duration: 1 }}
@@ -104,7 +105,7 @@ export default function Home() {
             animate={mainControl3}
             initial="hidden"
             variants={{
-              hidden: { opacity: 0, x: 400 },
+              hidden: { opacity: 0, x:20 },
               visible: { opacity: 1, x: 0 },
             }}
             transition={{ delay: 0.3, duration: 1 }}
