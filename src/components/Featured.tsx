@@ -28,7 +28,7 @@ const Featured = ({ data }: FeaturedProps) => {
       {data.map((item) => (
         <div
           key={item.title}
-          className="flex flex-col items-center md:items-start md:flex-row "
+          className="flex flex-col items-center md:items-start md:flex-row w-full "
         >
           <div className="w-full md:w1/2 ">
             <Image src={item.imgSrc} width={400} alt={item.alt} className="" />

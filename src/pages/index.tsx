@@ -114,7 +114,7 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-      <div className="text-colorWhite flex justify-end text-4xl my-4  ">
+      <div className="text-colorWhite flex justify-end text-4xl my-8  ">
         <Link href="/projects"><h3 className="hover:text-colorPrimary hover:scale-110 hover:translate-x-2 flex items-center gap-2 cursor-pointer">Veja mais projetos <FaArrowRightLong /></h3></Link>
         
       </div>

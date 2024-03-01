@@ -9,7 +9,7 @@ const navigation = [
   { title: "Home", href: "/" },
   { title: "Projetos", href: "/projects" },
   { title: "Sobre", href: "/" },
-  { title: "Contato", href: "/" },
+  { title: "Contato", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -52,7 +52,7 @@ const Navbar = () => {
               />
             </div>
 
-            <div className="bg-colorFourth bg-opacity-90 w-full z-10 px-24 flex flex-col h-96 justify-around items-center rounded-lg">
+            <div className="bg-colorFourth bg-opacity-90 w-full z-10 sm:px-24 px-16 flex flex-col h-96 justify-around items-center rounded-lg">
               {navigation.map((item) => (
                 <Link
                 onClick={clomeMenu}
