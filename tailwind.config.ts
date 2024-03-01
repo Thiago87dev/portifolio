@@ -11,12 +11,12 @@ const config: Config = {
       colors: {
         colorWhite: "#ffffff",
         colorBlack: "#000000",
-        colorPrimary: "#87cefa",
-        colorSecundary: "#70a8cc",
-        colorThird: "#5a849f",
-        colorFourth: "#446275",
-        colorFifth: "#2f414d",
-        colorAlmostBlack: "#1c2329",
+        colorPrimary: "#00ff00",
+        colorSecundary: "#1ed013",
+        colorThird: "#24a319",
+        colorFourth: "#247719",
+        colorFifth: "#1f4f16",
+        colorAlmostBlack: "#162a10",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
