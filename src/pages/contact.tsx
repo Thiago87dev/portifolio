@@ -48,8 +48,8 @@ const contact = () => {
         <span className="text-colorPrimary">WhatsApp</span> ou através das
         minhas <span className="text-colorPrimary">redes sociais</span>. 
       </h2>
-      <div className="flex gap-16 md:gap-32 justify-center my-16 text-center flex-wrap ">
-        <div className="hover:scale-125">
+      <div className="flex gap-16 md:gap-32 justify-center mx-auto my-16 text-center flex-wrap w-4/5 md:w-full ">
+        <div className="hover:scale-125 flex flex-col items-center">
           <Link
             target="_blank"
             className="text-colorPrimary text-4xl md:text-7xl"
@@ -59,7 +59,7 @@ const contact = () => {
           </Link>
           <p className="text-colorWhite text-lg">Whatsapp</p>
         </div>
-        <div className="hover:scale-125">
+        <div className="hover:scale-125 flex flex-col items-center">
           <Link
             target="_blank"
             className="text-colorPrimary text-4xl md:text-7xl"
@@ -69,7 +69,7 @@ const contact = () => {
           </Link>
           <p className="text-colorWhite text-lg">GitHub</p>
         </div>
-        <div className="hover:scale-125">
+        <div className="hover:scale-125 flex flex-col items-center">
           <Link
             target="_blank"
             className="text-colorPrimary text-4xl md:text-7xl"
@@ -79,7 +79,7 @@ const contact = () => {
           </Link>
           <p className="text-colorWhite text-lg">Linkedin</p>
         </div>
-        <div className="hover:scale-125">
+        <div className="hover:scale-125 flex flex-col items-center">
           <Link
             target="_blank"
             className="text-colorPrimary text-4xl md:text-7xl"
