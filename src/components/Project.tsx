@@ -30,8 +30,8 @@ const Project = ({ data }: ProjectProps) => {
             style={{ backgroundImage: `url(${item.imgPath})` }}
             className={`w-56 h-32 sm:w-80 sm:h-44 lg:w-96 lg:h-48 hover:scale-125  transition-all duration-300 bg-cover bg-center 5 flex justify-center items-center text-center p-8 relative`}
           >
-            <div className="bg-colorBlack opacity-0 hover:opacity-85  w-56 h-28 md:w-72 md:h-36 lg:w-96 lg:h-48 absolute flex justify-center items-center p-8">
-              <p className="text-colorWhite font-bold text-xs lg:text-xl">
+            <div className="bg-colorBlack opacity-0 hover:opacity-85  w-56 h-32 sm:w-80 sm:h-44 lg:w-96 lg:h-48 absolute flex justify-center items-center p-8">
+              <p className="text-colorWhite font-bold text-xs sm:text-lg lg:text-xl">
                 {item.text}
               </p>
             </div>
