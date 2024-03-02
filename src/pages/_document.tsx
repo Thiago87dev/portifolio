@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="mx-auto w-4/5  bg-black overflow-x-hidden ">
+      <body className="mx-auto md:w-4/5 bg-black overflow-x-hidden ">
         <Main />
         <NextScript />
       </body>

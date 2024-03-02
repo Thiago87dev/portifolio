@@ -67,14 +67,14 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="mt-20">
+      <div className="mt-20  ">
         <h2 className="text-colorPrimary  text-4xl font-bold ">
           Projetos em destaque
         </h2>
         <p className="text-colorWhite text-2xl">
           Alguns dos melhores projetos que eu criei.
         </p>
-        <div className="mt-16" ref={containerRef}>
+        <div className="mt-16 " ref={containerRef}>
           <motion.div
             animate={mainControl}
             initial="hidden"

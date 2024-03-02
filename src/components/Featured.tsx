@@ -30,7 +30,7 @@ const Featured = ({ data }: FeaturedProps) => {
           key={item.title}
           className="flex flex-col items-center md:items-start md:flex-row w-full "
         >
-          <div className="w-full md:w1/2 ">
+          <div className="w-full md:w1/2 flex">
             <Image src={item.imgSrc} width={400} alt={item.alt} className="" />
           </div>
           <div className="flex flex-col w-full md:w1/2 ">
