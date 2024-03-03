@@ -68,12 +68,13 @@ export default function Home() {
           <h2 className="text-colorWhite text-5xl md:text-7xl font-bold">
             Eu crio Websites
           </h2>
-          <p className="text-colorWhite mt-8 text-2xl tracking-wide ">
+          <p className="text-colorWhite mt-8 text-2xl tracking-wide mb-4">
             Estudante apaixonado por Análise e Desenvolvimento de Sistemas,
             capacitado na arte de criar websites. Transformando códigos em
             experiências digitais envolventes, meu entusiasmo está em construir
             soluções web impactantes.
           </p>
+          <Link className="text-colorPrimary text-3xl border-b-4 hover:rounded-lg hover:text-colorThird hover:bg-colorWhite " href="/contact">Contato</Link>
         </div>
         <div className="md:w-1/2 flex flex-col items-center gap-4">
           <Image
