@@ -7,7 +7,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
-import foto2 from "@/assets/img/foto2.png";
+import foto2 from "@/assets/img/foto2.jpeg";
 import { SiGithub } from "react-icons/si";
 
 const alegreya = Alegreya({ subsets: ["latin"] });
@@ -81,11 +81,11 @@ export default function Home() {
             className="bg-colorWhite rounded-full"
             alt="foto 2"
             src={foto2}
-            width={300}
+            width={250}
           />
           <div className="flex flex-col md:flex-row gap-4">
             <button
-              className="bg-colorWhite rounded-lg p-2 w-60 md:w-28"
+              className="bg-colorWhite rounded-lg p-2 w-60 md:w-28 font-semibold hover:scale-90"
               type="button"
               onClick={handleClick}
             >
@@ -93,7 +93,7 @@ export default function Home() {
             </button>
             <Link
               target="_blank"
-              className="flex  items-center justify-center text-colorWhite bg-colorThird gap-2 rounded-lg p-2"
+              className="flex  items-center justify-center text-colorWhite bg-colorThird gap-2 font-semibold rounded-lg p-2 hover:scale-90"
               href="https://github.com/Thiago87dev"
             >
               GitHub <SiGithub />

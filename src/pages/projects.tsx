@@ -9,7 +9,7 @@ import {
 const projects = () => {
   return (
     <div>
-      <p className="text-colorPrimary ">Work</p>
+      <p className="text-colorPrimary text-base font-semibold ">Projetos</p>
       <h1 className="text-colorWhite text-3xl font-bold mb-16">
         Uma seleção de projetos{" "}
         <span className="text-colorPrimary">responsivos</span> que eu criei onde
