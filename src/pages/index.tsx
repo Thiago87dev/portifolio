@@ -74,7 +74,12 @@ export default function Home() {
             experiências digitais envolventes, meu entusiasmo está em construir
             soluções web impactantes.
           </p>
-          <Link className="text-colorPrimary text-3xl border-b-4 hover:rounded-lg hover:text-colorThird hover:bg-colorWhite " href="/contact">Contato</Link>
+          <Link
+            className="text-colorPrimary text-3xl border-b-4 hover:rounded-lg hover:text-colorThird hover:bg-colorWhite "
+            href="/contact"
+          >
+            Contato
+          </Link>
         </div>
         <div className="md:w-1/2 flex flex-col items-center gap-4 border-solid justify-center">
           <Image
@@ -83,14 +88,15 @@ export default function Home() {
             src={foto2}
             width={350}
           />
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-col w-full justify-center sg:w-3/4 md:flex-row gap-4">
             <button
-              className="bg-colorWhite rounded-lg p-2 w-60 md:w-28 font-semibold hover:scale-90"
+              className="bg-colorWhite rounded-lg p-2  md:w-28 font-semibold hover:scale-90"
               type="button"
               onClick={handleClick}
             >
               Download CV
             </button>
+
             <Link
               target="_blank"
               className="flex  items-center justify-center text-colorWhite bg-colorThird gap-2 font-semibold rounded-lg p-2 hover:scale-90"
