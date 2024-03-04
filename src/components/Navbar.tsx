@@ -11,7 +11,7 @@ const alegreya = Alegreya({ subsets: ["latin"] });
 const navigation = [
   { title: "Home", href: "/" },
   { title: "Projetos", href: "/projects" },
-  { title: "Sobre", href: "/" },
+  { title: "Sobre", href: "/about" },
   { title: "Contato", href: "/contact" },
 ];
 

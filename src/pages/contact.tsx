@@ -8,9 +8,9 @@ const contact = () => {
   return (
     <div>
       <h1 className={`text-base text-colorPrimary font-semibold`}>Contato</h1>
-      <h1 className="text-colorWhite text-5xl md:text-7xl font-bold mb-10">
+      <h2 className="text-colorWhite text-5xl md:text-7xl font-bold mb-10">
         Entre em contato comigo
-      </h1>
+      </h2>
       <div className="bg-colorFifth rounded-sm flex justify-around flex-col md:flex-row ">
         <ContactForm />
         <div className="flex flex-col justify-around p-8 gap-4 md:gap-0">
