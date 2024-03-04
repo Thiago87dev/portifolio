@@ -36,7 +36,7 @@ const Project = ({ data }: ProjectProps) => {
               </p>
             </div>
           </div>
-          <div className="mt-2 flex gap-2 text-xl md:text-2xl flex-wrap">
+          <div className="mt-2 flex gap-2 text-2xl md:text-2xl flex-wrap">
             {item.icons.map((item) => (
               <p
                 key={item.title}

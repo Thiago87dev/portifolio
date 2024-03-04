@@ -38,7 +38,7 @@ const Featured = ({ data }: FeaturedProps) => {
               <h1 className="text-colorSecundary text-3xl">{item.title}</h1>
             </Link>
             <p className="text-colorWhite text-xl ">{item.text}</p>
-            <div className="mt-2 flex gap-2 text-lg flex-wrap">
+            <div className="mt-2 flex gap-2 text-2xl flex-wrap">
               {item.icons.map((item) => (
                 <p
                   key={item.title}
