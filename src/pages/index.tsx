@@ -7,7 +7,7 @@ import { useAnimation, useInView, motion } from "framer-motion";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
 import Image from "next/image";
-import foto2 from "@/assets/img/foto2.jpeg";
+import foto2 from "@/assets/img/foto2.png";
 import { SiGithub } from "react-icons/si";
 
 const alegreya = Alegreya({ subsets: ["latin"] });
@@ -76,12 +76,12 @@ export default function Home() {
           </p>
           <Link className="text-colorPrimary text-3xl border-b-4 hover:rounded-lg hover:text-colorThird hover:bg-colorWhite " href="/contact">Contato</Link>
         </div>
-        <div className="md:w-1/2 flex flex-col items-center gap-4">
+        <div className="md:w-1/2 flex flex-col items-center gap-4 border-solid justify-center">
           <Image
-            className="bg-colorWhite rounded-full"
+            className="bg-colorAlmostBlack rounded-full"
             alt="foto 2"
             src={foto2}
-            width={250}
+            width={350}
           />
           <div className="flex flex-col md:flex-row gap-4">
             <button
