@@ -22,20 +22,20 @@ const about = () => {
           />
         </div>
         <div className="lg:w-1/2">
-          <p className="text-colorSecundary text-3xl tracking-wide mb-4 ">
+          <p className="text-colorPrimary text-3xl tracking-wide mb-4 ">
             Um desenvolvedor Front-End movido pela curiosidade e o desejo de
             aprender.
           </p>
           <p className="text-colorWhite  text-xl tracking-wide mb-4 ">
-            Natural de São Paulo/SP, atualmente residindo em <span className="text-colorSecundary">Joinville/SC</span>, sou
+            Natural de São Paulo/SP, atualmente residindo em <span className="text-colorPrimary">Joinville/SC</span>, sou
             pai orgulhoso da Yasmin e do Nathan, além de ser motorista de
-            aplicativo e estudante de <span className="text-colorSecundary">análise e desenvolvimento de sistemas</span>.
+            aplicativo e estudante de <span className="text-colorPrimary">análise e desenvolvimento de sistemas</span>.
             Estou em uma jornada em busca da minha primeira oportunidade como 
-            <span className="text-colorSecundary"> desenvolvedor Front-End</span>. Com uma sede insaciável por conhecimento,
-            sou <span className="text-colorSecundary">autodidata</span> e tenho <span className="text-colorSecundary">habilidade para aprender rapidamente</span>, tendo
+            <span className="text-colorPrimary"> desenvolvedor Front-End</span>. Com uma sede insaciável por conhecimento,
+            sou <span className="text-colorPrimary">autodidata</span> e tenho <span className="text-colorPrimary">habilidade para aprender rapidamente</span>, tendo
             adquirido meu conhecimento por meio de vídeos do YouTube e cursos da
-            Udemy. Sou <span className="text-colorSecundary">proativo</span>, <span className="text-colorSecundary">comunicativo</span> e valorizo o <span className="text-colorSecundary">trabalho em equipe</span>,
-            sempre aberto a <span className="text-colorSecundary">novas experiências</span> e <span className="text-colorSecundary">desafios</span>. Estou comprometido em
+            Udemy. Sou <span className="text-colorPrimary">proativo</span>, <span className="text-colorPrimary">comunicativo</span> e valorizo o <span className="text-colorPrimary">trabalho em equipe</span>,
+            sempre aberto a <span className="text-colorPrimary">novas experiências</span> e <span className="text-colorPrimary">desafios</span>. Estou comprometido em
             crescer profissionalmente e contribuir de forma significativa para o
             mundo da tecnologia.
           </p>
