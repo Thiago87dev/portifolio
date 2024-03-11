@@ -54,7 +54,7 @@ export default function Home() {
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement("a");
     link.href = url;
-    link.download = "boleto.pdf";
+    link.download = "cv-thiago-alves.pdf";
     link.click();
   };
 
