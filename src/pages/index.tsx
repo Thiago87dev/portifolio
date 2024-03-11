@@ -90,7 +90,7 @@ export default function Home() {
           />
           <div className="flex flex-col w-full justify-center sg:w-3/4 md:flex-row gap-4">
             <button
-              className="bg-colorWhite text-lg rounded-lg p-2  md:w-28 font-semibold hover:scale-90"
+              className="bg-colorWhite text-lg rounded-lg p-2 font-semibold hover:scale-90"
               type="button"
               onClick={handleClick}
             >
