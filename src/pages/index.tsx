@@ -90,7 +90,7 @@ export default function Home() {
           />
           <div className="flex flex-col w-full justify-center sg:w-3/4 md:flex-row gap-4">
             <button
-              className="bg-colorWhite rounded-lg p-2  md:w-28 font-semibold hover:scale-90"
+              className="bg-colorWhite text-lg rounded-lg p-2  md:w-28 font-semibold hover:scale-90"
               type="button"
               onClick={handleClick}
             >
@@ -99,7 +99,7 @@ export default function Home() {
 
             <Link
               target="_blank"
-              className="flex  items-center justify-center text-colorWhite bg-colorThird gap-2 font-semibold rounded-lg p-2 hover:scale-90"
+              className="flex  items-center justify-center text-colorWhite bg-colorThird gap-2 text-lg font-semibold rounded-lg p-2 hover:scale-90"
               href="https://github.com/Thiago87dev"
             >
               GitHub <SiGithub />
