@@ -13,7 +13,7 @@ export default async function handler(
     response.setHeader('Content-Disposition', 'attachment; filename=cv-thiago-alves.txt')
     response.setHeader('Content-Type', 'application/text')
 
-    const filePath = path.join(process.cwd(), 'src/assets', 'boleto.pdf')
+    const filePath = path.join(process.cwd(), 'src/assets', 'curriculo.pdf')
     const fileStream = fs.createReadStream(filePath)
 
     fileStream.pipe(response)
