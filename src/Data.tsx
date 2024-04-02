@@ -102,7 +102,29 @@ export const blogData = [
   },
 ];
 
+// bricklayer
+
 export const allProjects = {
+  bricklayertData: [
+    {
+      title: "D.D.M.N",
+      text: "Meu primeiro site remunerado criado para uma construtora de Joinville",
+      imgPath: "/img/ddmn.png",
+      hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
+      hrefSite: "https://bricklayer-project.vercel.app/",
+      alt: "Capa D.D.M.N Construtora",
+      icons: [
+        { title: "React", icon: <SiReact /> },
+        { title: "Next", icon: <SiNextdotjs /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Tailwind", icon: <SiTailwindcss /> },
+        { title: "Git", icon: <SiGit /> },
+        { title: "GitHub", icon: <SiGithub /> },
+        { title: "VS Code", icon: <SiVisualstudiocode /> },
+      ],
+    },
+  ],
+
   pokeNextData: [
     {
       title: "PokeNext",
