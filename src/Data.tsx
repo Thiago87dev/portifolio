@@ -111,7 +111,7 @@ export const allProjects = {
       text: "Meu primeiro site remunerado criado para uma construtora de Joinville",
       imgPath: "/img/ddmn.png",
       hrefRepo: "https://github.com/Thiago87dev/bricklayer-project",
-      hrefSite: "https://bricklayer-project.vercel.app/",
+      hrefSite: "https://www.ddmn.app.br/",
       alt: "Capa D.D.M.N Construtora",
       icons: [
         { title: "React", icon: <SiReact /> },
@@ -209,20 +209,21 @@ export const allProjects = {
       title: "Gerador de Senha",
       text: "Um sistema que gera senhas aleatórias, podendo escolher entre letras maiúsculas ou minusculas, números e símbolos, além de definir o tamanho da senha. ",
       imgPath: "/img/gera-senha.png",
-      hrefRepo: "https://github.com/Thiago87dev/GeradorSenha",
-      hrefSite: "https://thiago87dev.github.io/GeradorSenha/",
+      hrefRepo: "https://github.com/Thiago87dev/password-generator",
+      hrefSite: "https://password-generator-hazel-phi.vercel.app/",
       alt: "Capa gerador de senha",
       icons: [
-        { title: "Html 5", icon: <SiHtml5 /> },
-        { title: "Css 3", icon: <SiCss3 /> },
-        { title: "Javascipt", icon: <SiJavascript /> },
+        { title: "React", icon: <SiReact /> },
+        { title: "Vite", icon: <SiVite /> },
+        { title: "Typescript", icon: <SiTypescript /> },
+        { title: "Css Mudules", icon: <SiCssmodules /> },
         { title: "Git", icon: <SiGit /> },
         { title: "GitHub", icon: <SiGithub /> },
         { title: "VS Code", icon: <SiVisualstudiocode /> },
       ],
     },
   ],
-  
+
   landingPageData: [
     {
       title: "First landing page",
@@ -240,7 +241,7 @@ export const allProjects = {
       ],
     },
   ],
-  
+
   mediaUniasselviData: [
     {
       title: "Média Uniasselvi",
