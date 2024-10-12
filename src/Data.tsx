@@ -17,6 +17,8 @@ import {
   SiW3C,
   SiSanity,
   SiCssmodules,
+  SiPython,
+  SiDjango ,
 } from "react-icons/si";
 
 import React from "react";
@@ -26,13 +28,15 @@ export const skillList = [
   { name: "Css 3", icon: <SiCss3 /> },
   { name: "Javascript", icon: <SiJavascript /> },
   { name: "Typescript", icon: <SiTypescript /> },
+  { name: "Python", icon: <SiPython /> },
+  { name: "Django", icon: <SiDjango /> },
   { name: "React", icon: <SiReact /> },
   { name: "NextJs", icon: <SiNextdotjs /> },
   { name: "Vite", icon: <SiVite /> },
   { name: "Tailwind", icon: <SiTailwindcss /> },
   { name: "Css Modules", icon: <SiCssmodules /> },
   { name: "Responsividade", icon: <MdOutlinePhonelink /> },
-  { name: "Sanity", icon: <SiSanity /> },
+  // { name: "Sanity", icon: <SiSanity /> },
   { name: "Git", icon: <SiGit /> },
   { name: "GitHub", icon: <SiGithub /> },
   { name: "VS Code", icon: <SiVisualstudiocode /> },

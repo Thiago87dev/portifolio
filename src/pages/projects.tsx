@@ -18,14 +18,14 @@ const projects = () => {
         <span className="text-colorPrimary">acessibilidade</span> e muito mais.
       </h1>
       <div className="flex flex-wrap justify-center gap-16">
+        <Project data={blogData} />
+        <Project data={bestMovieData} />    
         {Object.entries(allProjects).map(([key, value])=>(
           <div key={key}>
             <Project key={key} data={value} />
           </div>
         ))}
         <Project data={carHubData} />
-        <Project data={blogData} />
-        <Project data={bestMovieData} />    
       </div>
     </div>
   );
