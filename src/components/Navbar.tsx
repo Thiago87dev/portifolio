@@ -5,6 +5,7 @@ import { FaCircleCheck } from "react-icons/fa6";
 import { useState } from "react";
 import foto1 from "@/assets/img/foto1.png";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 const alegreya = Alegreya({ subsets: ["latin"] });
 
@@ -16,6 +17,7 @@ const navigation = [
 ];
 
 const Navbar = () => {
+  const pathName = usePathname()
   const [active, setActive] = useState(false);
 
   function toggleMenu() {
@@ -45,16 +47,22 @@ const Navbar = () => {
           <FaCircleCheck className="text-blue-500" />
         </Link>
         <div className="hidden md:flex justify-end gap-8 p-5 text-colorWhite ">
-          {navigation.map((item) => (
+          {navigation.map((item) => {
+            const isActive = pathName === item.href // Verifica se é a home
+            return(
             <Link
               className="text-sm uppercase font-semibold relative group overflow-hidden"
               key={item.title}
               href={item.href}
             >
               {item.title}
-              <span className="w-full h-[3px] bg-colorPrimary absolute inline-block left-0 bottom-0 -translate-x-[101%] group-hover:translate-x-0 transition-transform duration-200" />
+              <span className={`w-full h-[3px] bg-colorPrimary absolute inline-block left-0 bottom-0 transition-transform duration-200 ${
+            isActive
+              ? 'translate-x-0' // Mantém a linha azul embaixo do link ativo
+              : '-translate-x-[101%] group-hover:translate-x-0' // Mostra a linha azul no hover para links inativos
+          }`} />
             </Link>
-          ))}
+          )})}
         </div>
       </nav>
       <div className="md:hidden flex justify-between p-4">
